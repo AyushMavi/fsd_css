@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <form border="2px" style="border:2px solid black; padding:20px; width:300px; margin:auto;">
+     <table width="100%">
+      <tr>
+        <td align="left">
+          <img src="https://t4.ftcdn.net/jpg/02/81/77/17/360_F_281771704_pPFkanzB6YuKGbHIpXhHgcAwrJ0ZT4W9.jpg" alt="Logo" width="50" height="50">
+        </td>
+        <td><h2>Registration Form</h2></td>
+        
+      </tr>
+    </table>
+    
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="rollno">Roll Number:</label>
+    <input type="text" id="rollno" name="rollno" required><br><br>
+
+    <label for="address">Address:</label>
+    <textarea id="Address" name="Address" rows="4" cols="40" placeholder="Enter your Address..."></textarea><br><br>
+
+    <label for="branch">Branch:</label>
+    <input type="radio" id="IT" name="IT" required> IT
+    <input type="radio" id="CE" name="CE" required> CE
+    <input type="radio" id="AIML" name="AIML" required> AIML
+    <input type="radio" id="CSEDS" name="CSEDS" required> CSEDS <br><br>
+
+    <label for="skills">Skills:</label>
+        <select id="branch" name="branch" required>
+      <option value="">--Select Language--</option>
+      <option value="C++">C++</option>
+      <option value="Java">Java</option>
+      <option value="Python">Python</option>
+    </select><br><br>
+
+    <label for="File Upload">File Upload:</label>
+    <button>Add File</button><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+</body>
+</html>
